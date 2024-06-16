@@ -1,0 +1,89 @@
+/* Sidebar container */
+.sidebar {
+	min-height: 100vh; /* Ensure the sidebar takes the full viewport height */
+	display: inline-flex; /* Use inline-flex to allow for flexbox properties */
+	flex-direction: column; /* Arrange children in a column */
+	justify-content: space-between; /* Space out children with equal space between */
+	background-color: #f0f4f9; /* Light background color */
+	padding: 10px 15px; /* Padding inside the sidebar */
+}
+
+/* Top section of the sidebar */
+.sidebar .top {
+	margin-top: 15px; /* Top margin for spacing */
+}
+
+/* Images inside the sidebar */
+.sidebar img {
+	width: 20px; /* Fixed width for images */
+}
+
+/* Menu items inside the sidebar */
+.sidebar .menu {
+	display: block; /* Display as block for full width */
+	margin-left: 10px; /* Left margin for spacing */
+	cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* New chat button inside the sidebar */
+.sidebar .new-chat {
+	margin-top: 50px; /* Top margin for spacing */
+	display: inline-flex; /* Use inline-flex to align items horizontally */
+	align-items: center; /* Center items vertically */
+	gap: 10px; /* Gap between elements */
+	padding: 10px 15px; /* Padding inside the button */
+	background-color: #e6eaf1; /* Light background color */
+	border-radius: 50px; /* Rounded corners */
+	font-size: 14px; /* Font size */
+	color: grey; /* Text color */
+	cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Recent chats section inside the sidebar */
+.sidebar .recent {
+	display: flex; /* Use flexbox for layout */
+	flex-direction: column; /* Arrange children in a column */
+	animation: fadeIn 2s; /* Fade-in animation */
+}
+
+/* Title for the recent chats section */
+.sidebar .recent-title {
+	margin-top: 30px; /* Top margin for spacing */
+	margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+/* Individual recent chat entry */
+.sidebar .recent-entry {
+	display: flex; /* Use flexbox for layout */
+	align-items: start; /* Align items to the start */
+	gap: 10px; /* Gap between elements */
+	padding: 10px; /* Padding inside the entry */
+	padding-right: 40px; /* Right padding for spacing */
+	border-radius: 50px; /* Rounded corners */
+	color: #282828; /* Text color */
+	cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for recent chat entries */
+.sidebar .recent-entry:hover {
+	background-color: #e2e6eb; /* Background color on hover */
+}
+
+/* Bottom section of the sidebar */
+.sidebar .bottom {
+	display: flex; /* Use flexbox for layout */
+	flex-direction: column; /* Arrange children in a column */
+}
+
+/* Items in the bottom section of the sidebar */
+.sidebar .bottom-item {
+	padding-right: 10px; /* Right padding for spacing */
+	cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Responsive design for screens with max width of 600px */
+@media (max-width: 600px) {
+	.sidebar {
+		display: none; /* Hide the sidebar on small screens */
+	}
+}
