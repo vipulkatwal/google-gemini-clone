@@ -8,7 +8,7 @@ import {
 // Define constants for the model name and API key
 const MODEL_NAME = "gemini-1.0-pro";
 // API key should be securely managed in production, not hardcoded
-const API_KEY = "AIzaSyDFaxS3bCHtEL6TkZHbm62uNVhKfgOVDE8";
+const API_KEY = "AIzaSyCZVEIt62SdnqrDaa9oqgjnm6tDpMnyLJU";
 
 /**
  * Function to run a chat with the Google Generative AI model
